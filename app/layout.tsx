@@ -14,8 +14,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: "Duc Huy's Porfolio",
-	description: "Aspiring Full-Stack Website Developer | HTML | CSS | Javascript | React | Node.js | Next.js | Express.js | MongoDB | SQL | Git | GitHub | Responsive Design | UI/UX Principles | Problem-Solving Skills | Team Collaboration | Eager to Learn and Grow",
+    title: "Dang Nguyen Duc Huy (Huy DND) | Edge AI Engineer and Computer Vision Developer Portfolio",
+    description: "Edge AI Engineer and Computer Vision Developer | Computer Science Student at HUST | Python | C++ | PyTorch | OpenCV | LangChain | ESP32-CAM | YOLO | Robotics",
+	icons: {
+		icon: "/favicon.svg",
+	},
 };
 
 export default function RootLayout({
