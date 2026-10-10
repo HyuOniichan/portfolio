@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 export const BentoGrid = ({
     className,
@@ -24,15 +25,15 @@ export const BentoGridItem = ({
     title,
     description,
     img,
-    header,
+    link,
     icon,
     className,
-    titleClassName
 }: {
     id: number;
     title: string;
     description?: string | React.ReactNode;
     img?: string;
+    link?: string;
     header?: React.ReactNode;
     icon?: React.ReactNode;
     className?: string;
@@ -59,14 +60,20 @@ export const BentoGridItem = ({
                 </div>
             </div>
             <div className="transition duration-200 group-hover/bento:translate-x-2 p-4">
-                {icon}
-                {/* Make the first item larger */}
-                <div className={`text-lg font-sans font-bold text-neutral-600 dark:text-neutral-200 ${id == 1 && 'md:text-2xl lg:text-4xl md:mb-1 lg:mb-2'}`}>
-                    {title}
-                </div>
-                <div className={`text-sm font-sans font-normal text-neutral-600 dark:text-neutral-300 ${id == 1 && 'md:text-md lg:text-xl'}`}>
-                    {description}
-                </div>
+                <Link
+                    href={link || "#"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    {icon}
+                    {/* Make the first item larger */}
+                    <div className={`text-lg font-sans font-bold text-neutral-600 dark:text-neutral-200 ${id == 1 && 'md:text-2xl lg:text-4xl md:mb-1 lg:mb-2'}`}>
+                        {title}
+                    </div>
+                    <div className={`text-sm font-sans font-normal text-neutral-600 dark:text-neutral-300 ${id == 1 && 'md:text-md lg:text-xl'}`}>
+                        {description}
+                    </div>
+                </Link>
             </div>
         </div>
     );

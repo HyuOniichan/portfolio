@@ -36,43 +36,42 @@ export const projects = [
     {
         id: 1,
         title: 'Robot Arm CV',
-        description: 'Vision-based robotic arm control system using real-time Computer Vision and ESP32-CAM stream',
-        img: '/project_robotarmcv.png',
+        description: 'Real-time Computer Vision pipeline on ESP32-CAM edge devices for vision-based robotic arm control via serial communication', img: '/project_robotarmcv.png',
+        link: 'https://www.youtube.com/watch?v=XOkkgYuG6wo',
         className: 'lg:col-span-4 lg:row-span-4 md:col-span-6 md:row-span-6',
-        titleClassName: '',
     },
     {
         id: 2,
         title: 'CarbonWise',
         description: 'Voluntary carbon credit exchange platform with an integrated RAG chatbot via Gemini API & LangChain.js',
         img: '/project_carbonwise.png',
+        link: 'https://greenmind-ohck.onrender.com/',
         className: 'lg:col-span-2 lg:row-span-2 md:col-span-3 md:row-span-4',
-        titleClassName: '',
     },
     {
         id: 3,
         title: 'Studiverse',
         description: 'An E-learning web application built with the MERN stack to support modern online education',
         img: '/project_studiverse.png',
+        link: 'https://huy-studiverse.vercel.app/',
         className: 'lg:col-span-2 lg:row-span-2 md:col-span-3 md:row-span-4',
-        titleClassName: '',
     },
 ];
 
 export const feedbacks = [
     {
         quote: "Huy did an outstanding job integrating the RAG chatbot into our platform. His strong technical background in both AI and web development made the implementation seamless.",
-        name: "Minh Quan",
+        name: "Ms. Tho",
         title: "Project Lead, CarbonWise Initiative"
     },
-    {
-        quote: "Working with Huy on our computer vision pipeline was fantastic. His attention to model accuracy and latency optimization on edge devices exceeded our expectations.",
-        name: "Dr. Hoang Nam",
-        title: "AI Research Mentor"
+{
+        quote: "An engaging, practical, and highly polished student project. The introductory video was clear, well-structured, and demonstrated a strong level of completeness.",
+        name: "SOICT - HUST Jury Board",
+        title: "Innovation Day 2026 Evaluation"
     },
     {
-        quote: "Huy is a quick learner and a dedicated engineer. His ability to bridge hardware control with advanced computer vision is truly impressive. Nice to work with btw.",
-        name: "Thu Ha",
+        quote: "Huy is a quick learner and a dedicated engineer. His ability to integrate advanced AI models into a software application is truly impressive. Nice to work with him btw.",
+        name: "Mr. Hoang Anh",
         title: "Senior Software Engineer"
     },
 ];
@@ -82,24 +81,24 @@ export const experiences = [
         description: "09/2024 - Present",
         title: "Hanoi University of Science and Technology - Computer Science (IT1)",
         src: "/background_hust.jpeg",
-        ctaText: "Peek",
+        ctaText: "Details",
         ctaLink: "https://qldt.hust.edu.vn/",
         content: `
-            Being a HUST - SOICT student with a GPA of 3.56/4.0, I have gained a solid foundation in computer science principles, algorithms, and practical AI research.
+            Being a HUST - SOICT third-year student with a CPA of 3.56/4.0, I have gained a solid foundation in computer science principles, algorithms, and practical AI research.
             Throughout my studies, I have focused heavily on artificial intelligence, machine learning architectures, and edge computing systems.
         `,
     },
     {
         description: "10/2025 - 03/2026",
-        title: "AI Engineer & Computer Vision Researcher - Robot Arm CV Project",
+        title: "Edge AI Engineer - Robot Arm CV Project (Top 1 Innovation Day 2026, SOICT - HUST)",
         src: "/project_robotarmcv.png",
-        ctaText: "Peek",
-        ctaLink: "https://github.com/DangNguyenDucHuy/robot-arm-cv",
+        ctaText: "Details",
+        ctaLink: "https://www.facebook.com/share/p/1BMJxE7ge7/",
         content: `
-            Developed a real-time Computer Vision pipeline to detect arm and hand keypoints from an edge-device camera stream (ESP32-CAM), sending control commands via serial communication.
-            (1) Fine-tuned a YOLO-based pose model using transfer learning in PyTorch.
-            (2) Built a custom dataset by collecting/annotating 400+ hand images and augmenting training data from a public dataset (26k+ samples).
-            (3) Evaluated multiple pose detection approaches including MediaPipe and Ultralytics YOLO for accuracy-latency trade-offs.
+            Developed a real-time Computer Vision pipeline to detect arm and hand keypoints from an edge-device camera stream (ESP32-CAM), transmitting control commands to the robotic arm via serial communication.
+            (1) Achieved Top 1 at the Innovation Day 2026 student technology project showcase event organized by SOICT - HUST.
+            (2) Fine-tuned a YOLO-based pose model (yolo26n-pose) via transfer learning in PyTorch; evaluated accuracy-latency trade-offs across MediaPipe and Ultralytics YOLO. 
+            (3) Constructed a custom dataset of 400+ annotated hand images, augmented with a 26k-sample public dataset for robust edge deployment.
         `,
     },
 ];
