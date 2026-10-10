@@ -43,24 +43,24 @@ const Hero = () => {
                         Huy&apos;s Portfolio
                     </h2>
 
-                    <TextGenerateEffect 
+                    <TextGenerateEffect
                         className='text-center text-[40px] md:text-5xl lg:text-6xl'
-                        words="Full-Stack Web Developer"
+                        words="Edge AI & Computer Vision Developer"
                         changeColorIdx={{
                             start: 0,
-                            end: 1,
+                            end: 2,
                             color: 'text-blue-400'
                         }}
                     />
 
                     <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
-                        Hi, I&apos;m Huy, an aspiring full-stack web developer passionate about 
-                        crafting dynamic and responsive web applications. Explore my portfolio 
-                        to see my projects and skills in action!
+                        Hi, I&apos;m Huy, an aspiring Edge AI Engineer passionate about deploying optimized Computer Vision 
+                        models on resource-constrained devices, integrating on-device AI with robotics and embedded systems.
+                        Explore my portfolio to see my projects and skills in action!
                     </p>
 
                     <a href='#about'>
-                        <MagicButton 
+                        <MagicButton
                             title="View my work"
                         />
                     </a>

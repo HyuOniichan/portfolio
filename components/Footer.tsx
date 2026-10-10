@@ -3,6 +3,7 @@ import MagicButton from './ui/MagicButton'
 import { IoIosSend } from 'react-icons/io'
 import { socials } from '@/data'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
+import Link from 'next/link'
 
 const Footer = () => {
     return (
@@ -32,16 +33,19 @@ const Footer = () => {
 
             <div className='flex mt-16 md:flex-row flex-col justify-between items-center gap-3'>
                 <p className='md:text-base text-sm md:font-normal font-light'>
-                    Copyright © 2025 Huy DND
+                    Copyright © {new Date().getFullYear()} Huy DND
                 </p>
                 <div className='flex items-center gap-4'>
                     {socials.map((social) => (
-                        <div
+                        <Link
                             key={social.id}
+                            href={social.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className='cursor-pointer flex justify-center items-center bg-black-200'
                         >
                             <social.icon className='w-10 md:w-8 h-10 md:h-8' />
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </div>

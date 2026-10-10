@@ -21,8 +21,8 @@ const Projects = () => {
                     title, 
                     description,
                     img,
-                    className, 
-                    titleClassName 
+                    link,
+                    className 
                 }) => (
                     <BentoGridItem
                         id={id}
@@ -30,8 +30,8 @@ const Projects = () => {
                         title={title}
                         description={description}
                         img={img}
+                        link={link}
                         className={className}
-                        titleClassName={titleClassName}
                     />
                 ))}
             </BentoGrid>

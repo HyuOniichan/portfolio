@@ -122,7 +122,7 @@ export function ExpandableCardDemo({ cards }: { cards: CardType[] }) {
                                         initial={{ opacity: 0 }}
                                         animate={{ opacity: 1 }}
                                         exit={{ opacity: 0 }}
-                                        className="text-neutral-600 text-xs md:text-sm lg:text-base h-40 md:h-fit pb-6 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
+                                        className="text-neutral-600 text-xs md:text-sm lg:text-base h-40 md:max-h-40 pb-6 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
                                     >
                                         {active.content}
                                     </motion.div>
