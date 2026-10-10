@@ -41,7 +41,7 @@ export const BentoGridItem = ({
     return (
         <div
             className={cn(
-                "group/bento relative shadow-input row-span-1 flex flex-col justify-between space-y-4 rounded-2xl border border-neutral-200 bg-white transition duration-200 hover:shadow-xl dark:border-blue-400/50 dark:bg-black dark:shadow-none",
+                "group/bento relative shadow-input row-span-2 flex flex-col justify-between space-y-4 rounded-2xl border border-neutral-200 bg-white transition duration-200 hover:shadow-xl dark:border-blue-400/50 dark:bg-black dark:shadow-none",
                 className,
             )}
         >
@@ -53,7 +53,7 @@ export const BentoGridItem = ({
                         <img
                             src={img}
                             alt={title || "Project's thumbnail"}
-                            className={`${id == 1 ? 'md:h-[80%]' : 'md:h-[70%]'} h-[55%] object-cover rounded-t-2xl w-full`}
+                            className={`${id == 1 ? 'md:h-[80%] lg:h-[75%]' : 'md:h-[70%] lg:h-[65%]'} h-[70%] object-cover rounded-t-2xl w-full`}
                         />
                     )}
                 </div>
