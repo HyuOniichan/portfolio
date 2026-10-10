@@ -2,6 +2,7 @@ import { Spotlight } from './ui/Spotlight'
 import { cn } from '@/lib/utils'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
 import MagicButton from './ui/MagicButton'
+import Link from 'next/link'
 
 const Hero = () => {
     return (
@@ -54,16 +55,29 @@ const Hero = () => {
                     />
 
                     <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
-                        Hi, I&apos;m Huy, an aspiring Edge AI Engineer passionate about deploying optimized Computer Vision 
+                        Hi, I&apos;m Huy, an aspiring Edge AI Engineer passionate about deploying optimized Computer Vision
                         models on resource-constrained devices, integrating on-device AI with robotics and embedded systems.
                         Explore my portfolio to see my projects and skills in action!
                     </p>
 
-                    <a href='#about'>
-                        <MagicButton
-                            title="View my work"
-                        />
-                    </a>
+                    <div className='flex md:flex-row md:gap-4 flex-col gap-2'>
+                        <Link href='#about'>
+                            <MagicButton
+                                title="Explore my portfolio"
+                                variant='primary'
+                            />
+                        </Link>
+                        <Link 
+                            href='/cv.pdf'
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <MagicButton
+                                title="View my CV"
+                                variant='outline'
+                            />
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>
