@@ -32,7 +32,7 @@ const Footer = () => {
 
             <div className='flex mt-16 md:flex-row flex-col justify-between items-center gap-3'>
                 <p className='md:text-base text-sm md:font-normal font-light'>
-                    Copyright © 2025 Huy DND
+                    Copyright © {new Date().getFullYear()} Huy DND
                 </p>
                 <div className='flex items-center gap-4'>
                     {socials.map((social) => (

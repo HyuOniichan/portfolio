@@ -1,4 +1,4 @@
-import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaEnvelope, FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export const navItems = [
     { name: "Home", link: "#" },
@@ -12,7 +12,7 @@ export const navItems = [
 export const aboutText = [
     {
         title: "Who Am I?",
-        content: "I am a dedicated Full-Stack Web Developer with 2+ years of experience building fast, deliverable, and scalable websites for startups, agencies, and growing businesses. \nMy core focus is Full-stack website development, working with JavaScript frameworks (React, Express, Node.js). I help clients design, build, improve, and scale their web applications."
+        content: "I am an aspiring Edge AI Engineer and Computer Science student at Hanoi University of Science and Technology (HUST) with a strong focus on deploying optimized Computer Vision models on resource-constrained edge devices. \nMy core expertise lies in bridging on-device AI with robotics, embedded systems, and full-stack web platforms to solve real-world challenges."
     },
     {
         title: "Name",
@@ -35,102 +35,71 @@ export const aboutText = [
 export const projects = [
     {
         id: 1,
-        title: 'CarbonWise',
-        description: 'A voluntary carbon credit exchange platform with integrated RAG chatbot',
-        img: '/project_carbonwise.png',
+        title: 'Robot Arm CV',
+        description: 'Vision-based robotic arm control system using real-time Computer Vision and ESP32-CAM stream',
+        img: '/project_robotarmcv.png',
         className: 'lg:col-span-4 lg:row-span-4 md:col-span-6 md:row-span-6',
         titleClassName: '',
     },
     {
         id: 2,
-        title: 'Studiverse',
-        description: 'An E-learning app built with MERN stack',
-        img: '/project_studiverse.png',
-        className: 'lg:col-span-2 lg:row-span-2 md:col-span-3 md:row-span-3',
+        title: 'CarbonWise',
+        description: 'Voluntary carbon credit exchange platform with an integrated RAG chatbot via Gemini API & LangChain.js',
+        img: '/project_carbonwise.png',
+        className: 'lg:col-span-2 lg:row-span-2 md:col-span-3 md:row-span-4',
         titleClassName: '',
     },
     {
         id: 3,
-        title: 'WorkDi',
-        description: 'Team management and knowledge sharing website',
-        img: '/project_workdi.png',
-        className: 'lg:col-span-2 lg:row-span-2 md:col-span-3 md:row-span-3',
+        title: 'Studiverse',
+        description: 'An E-learning web application built with the MERN stack to support modern online education',
+        img: '/project_studiverse.png',
+        className: 'lg:col-span-2 lg:row-span-2 md:col-span-3 md:row-span-4',
         titleClassName: '',
     },
-    {
-        id: 4,
-        title: 'Project 4',
-        description: 'Description for project 4',
-        img: '',
-        className: 'lg:col-span-2 lg:row-span-2 md:col-span-3 md:row-span-3',
-        titleClassName: '',
-    },
-    {
-        id: 5,
-        title: 'Project 5',
-        description: 'Description for project 5',
-        img: '',
-        className: 'lg:col-span-2 lg:row-span-2 md:col-span-3 md:row-span-3',
-        titleClassName: '',
-    },
-    {
-        id: 6,
-        title: 'Project 6',
-        description: 'Description for project 6',
-        img: '',
-        className: 'lg:col-span-2 lg:row-span-2 md:col-span-3 md:row-span-3',
-        titleClassName: '',
-    },
-]
+];
 
 export const feedbacks = [
     {
-        quote: "Huy did an amazing job on our website redesign. His attention to detail and creativity really brought our vision to life. Highly recommend!",
-        name: "John Doe",
-        title: "CEO, TechCorp"
+        quote: "Huy did an outstanding job integrating the RAG chatbot into our platform. His strong technical background in both AI and web development made the implementation seamless.",
+        name: "Minh Quan",
+        title: "Project Lead, CarbonWise Initiative"
     },
     {
-        quote: "Huy did an amazing job on our website redesign. His attention to detail and creativity really brought our vision to life. Highly recommend!",
-        name: "John Doe 2",
-        title: "CEO, TechCorp"
+        quote: "Working with Huy on our computer vision pipeline was fantastic. His attention to model accuracy and latency optimization on edge devices exceeded our expectations.",
+        name: "Dr. Hoang Nam",
+        title: "AI Research Mentor"
     },
     {
-        quote: "Huy did an amazing job on our website redesign. His attention to detail and creativity really brought our vision to life. Highly recommend!",
-        name: "John Doe 3",
-        title: "CEO, TechCorp"
+        quote: "Huy is a quick learner and a dedicated engineer. His ability to bridge hardware control with advanced computer vision is truly impressive. Nice to work with btw.",
+        name: "Thu Ha",
+        title: "Senior Software Engineer"
     },
-]
+];
 
 export const experiences = [
     {
-        description: "2024 - 2028",
-        title: "Hanoi University of Science and Technology - Computer Science",
+        description: "09/2024 - Present",
+        title: "Hanoi University of Science and Technology - Computer Science (IT1)",
         src: "/background_hust.jpeg",
         ctaText: "Peek",
         ctaLink: "https://qldt.hust.edu.vn/",
         content: `
-            Being a HUST - SOICT student, I have gained a solid foundation in computer science principles and practices.
-            Throughout my studies, I have engaged in various projects that have enhanced my technical abilities and teamwork skills.
-            I am proud to be part of a prestigious institution that fosters innovation and excellence in the field of computer science.
+            Being a HUST - SOICT student with a GPA of 3.56/4.0, I have gained a solid foundation in computer science principles, algorithms, and practical AI research.
+            Throughout my studies, I have focused heavily on artificial intelligence, machine learning architectures, and edge computing systems.
         `,
     },
     {
-        description: "Lana Del Rey",
-        title: "Summertime Sadness",
-        src: "https://assets.aceternity.com/demos/lana-del-rey.jpeg",
+        description: "10/2025 - 03/2026",
+        title: "AI Engineer & Computer Vision Researcher - Robot Arm CV Project",
+        src: "/project_robotarmcv.png",
         ctaText: "Peek",
-        ctaLink: "https://ui.aceternity.com/templates",
+        ctaLink: "https://github.com/DangNguyenDucHuy/robot-arm-cv",
         content: `
-            Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-            her melancholic and cinematic music style. Born Elizabeth Woolridge
-            Grant in New York City, she has captivated audiences worldwide with
-            her haunting voice and introspective lyrics. <br /> <br /> Her songs
-            often explore themes of tragic romance, glamour, and melancholia,
-            drawing inspiration from both contemporary and vintage pop culture.
-            With a career that has seen numerous critically acclaimed albums, Lana
-            Del Rey has established herself as a unique and influential figure in
-            the music industry, earning a dedicated fan base and numerous
-            accolades.
+            Developed a real-time Computer Vision pipeline to detect arm and hand keypoints from an edge-device camera stream (ESP32-CAM), sending control commands via serial communication.
+            (1) Fine-tuned a YOLO-based pose model using transfer learning in PyTorch.
+            (2) Built a custom dataset by collecting/annotating 400+ hand images and augmenting training data from a public dataset (26k+ samples).
+            (3) Evaluated multiple pose detection approaches including MediaPipe and Ultralytics YOLO for accuracy-latency trade-offs.
         `,
     },
 ];
@@ -150,6 +119,11 @@ export const socials = [
         id: 3,
         icon: FaLinkedin,
         link: 'https://www.linkedin.com/in/%C4%91%E1%BA%B7ng-nguy%E1%BB%85n-%C4%91%E1%BB%A9c-huy-96b7b430b/'
+    },
+    {
+        id: 4,
+        icon: FaEnvelope,
+        link: 'mailto:dangnguyenduchuy@gmail.com'
     },
 ]
 
